@@ -1,0 +1,29 @@
+.navbar-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  position: relative;
+  & h4 {
+    font-family: "Dancing Script", cursive;
+    color: #e5e5e5;
+    margin: 0 24px;
+    font-size: 17px;
+    letter-spacing: 6px;
+    &:hover {
+      color: red;
+    }
+  }
+  .icon {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    color: white;
+    &:hover {
+      color: red;
+      scale: 1.2;
+    }
+  }
+}

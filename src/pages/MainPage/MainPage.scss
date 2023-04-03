@@ -1,0 +1,11 @@
+@import "../../Sass/colors.scss";
+
+.main-page-container {
+  background-color: $default-background;
+  .navbar {
+    height: 10vh;
+  }
+  .page-content {
+    height: 90vh;
+  }
+}
