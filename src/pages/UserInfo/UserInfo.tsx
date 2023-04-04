@@ -20,7 +20,11 @@ const UserInfo = (props: Props) => {
 	useEffect(() => {
 		const fetchUserInfo = async () => {
 			const token = localStorage.getItem('token');
-			const { data } = await axiosInstance(`${API.getUserProjects}?berear=${token}`)
+			const headers = {
+				'Content-Type': 'application/json',
+				Authorization: `Bearer ${token}`,
+			};
+			const { data } = await axiosInstance.get(API.getUserProjects, { headers })
 			dispatch(setUserInfo({ userInfo: data }))
 		}
 		fetchUserInfo()
