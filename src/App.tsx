@@ -7,7 +7,6 @@ import MainPage from "./pages/MainPage/MainPage";
 const App = () => {
   // const { isUserLogged } = useSelector((state: any) => state.userDetails)
   const isUserLogged = localStorage.getItem('token');
-  console.log(isUserLogged)
 
   return (
     <Grid>

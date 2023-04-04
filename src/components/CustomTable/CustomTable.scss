@@ -1,0 +1,40 @@
+.table-container {
+  background-color: white;
+  color: #424242;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .row-low-score {
+    background-color: rgb(254, 204, 206);
+    color: rgb(196, 26, 83);
+  }
+  .row-high-score {
+    background-color: rgb(196, 245, 196);
+    color: green;
+  }
+}
+
+table {
+  width: 100%;
+  height: 75%;
+  thead {
+    font-size: 22px;
+    font-family: sans-serif;
+    background-color: rgb(38, 38, 38);
+    color: #dcdcdc;
+    th {
+      margin: 20px;
+      padding: 20px;
+      font-weight: 100;
+    }
+  }
+
+  tbody {
+    font-size: 20px;
+    background-color: #dcdcdc;
+    & td {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+}

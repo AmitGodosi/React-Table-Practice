@@ -1,10 +1,43 @@
 .user-info-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
   height: 100%;
-  .table-wrapper {
+  .key-value-title {
+    color: #424242;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .info-table-wrapper {
     height: 75%;
+    width: 75%;
+    margin-bottom: 20px;
+  }
+  .details-table-wrapper {
+    height: 25%;
+    width: 75%;
+    margin-bottom: 20px;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+
+  .table-scroll {
     overflow-y: scroll;
+    max-height: 400px;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 10px;
+    }
   }
 }

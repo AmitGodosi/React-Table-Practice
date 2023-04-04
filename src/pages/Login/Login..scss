@@ -26,7 +26,8 @@
       flex-direction: column;
       .field {
         width: 100%;
-        margin: 10px 0;
+        margin: 25px 0;
+        position: relative;
         .input {
           width: 100%;
           padding: 20px;
@@ -37,10 +38,17 @@
             outline: none;
           }
         }
+        & p {
+          color: rgb(168, 89, 89);
+          font-weight: bold;
+          letter-spacing: 0.5px;
+          position: absolute;
+        }
       }
     }
     .login-button {
       padding: 20px;
+      margin-top: 20px;
       background-color: rgb(117, 157, 172);
       border: none;
       border-radius: 10px;

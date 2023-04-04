@@ -23,7 +23,7 @@ type IPersonalDetails = {
   name: string;
 };
 
-type IUserInfo = {
+export type IUserInfo = {
   id: string;
   name: string;
   score: number;

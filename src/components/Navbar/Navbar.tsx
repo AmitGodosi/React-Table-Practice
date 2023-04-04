@@ -10,8 +10,8 @@ import "./Navbar.scss";
 export default function Navbar() {
     const dispatch = useDispatch()
     const navigation = useNavigate()
-    const { isUserLogged } = useSelector((state: any) => state.userDetails)
-
+    const isUserLogged = localStorage.getItem('token');
+    
     const logoutHandler = () => {
         dispatch(logout());
         dispatch(deleteUserInfo());
@@ -21,7 +21,7 @@ export default function Navbar() {
 
     return (
         <Grid className="navbar-container">
-            <h4>ZIGIT TASK</h4>
+            <h4>{isUserLogged ? 'User details' : 'Login'}</h4>
             {isUserLogged && <AiOutlineLogout onClick={logoutHandler} className='icon' size={30} />}
         </Grid>
     );
